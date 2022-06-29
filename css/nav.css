@@ -1,0 +1,123 @@
+﻿@charset "UTF-8";
+@media screen and (max-width:800px) { /*RWD*/
+	ul{
+		flex-direction: column;
+	}
+	ul>div{
+		display: flex;
+		flex-direction: column;
+	}
+	nav a {
+		border-bottom:2px rgb(240,240,240) solid; /*設定導覽列分隔線*/
+		border-left: 2px rgb(240,240,240) solid; /*設定導覽列分隔線*/
+	}
+}
+@font-face {
+	font-family: 'Smooch-Regular';
+	src: url('../font/Smooch-Regular.woff') format("woff"),
+	url('../font/Smooch-Regular.ttf') format("truetype");
+}
+@font-face{
+	font-family: 'Times-New-Roman';
+	src: url('../font/Times-New-Roman.woff') format("woff"),
+	url('../font/Times-New-Roman.ttf') format("truetype");
+}
+@font-face {
+	font-family: 'Baskervville-Regular';
+	src:url('../font/Baskervville-Regular.ttf') format("truetype");
+}
+@font-face {
+	font-family: 'AmaticSC-Bold';
+	src:url('../font/AmaticSC-Bold.ttf') format("truetype");
+}
+*{
+	word-break: break-all;
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+img{
+    max-width:100%; /*不使用width:100% 是因避免圖片解析度不好，隨父元素被放大時會糊掉*/
+    height:auto;
+}
+.wrapper{
+	box-sizing:border-box;
+	max-width:90%;
+	margin:0 auto;
+	padding:0 4%;
+}
+header{
+	z-index:100;
+	cursor:url(../image/cursor.png),auto; /*logo滑鼠特效*/
+}
+ul{
+	display:flex;
+	justify-content: space-between; /*將logo與導覽列水平放置*/
+}
+ul>div{
+	margin:0px;
+}
+
+nav{
+	background-color:#7E7E7E; /*導覽列顏色*/
+	font-family:'微軟正黑體',Arial;
+	width: 100%;
+}
+nav li {
+	display:inline-block;
+}
+nav a {
+	text-decoration:none;
+	font-size:20px;
+	color: white;
+	display:block;
+	padding:0 15px;
+	min-height:50px; /*設定最小height*/
+	border-right:1px rgb(240,240,240) solid; /*設定導覽列分隔線顏色*/		
+	display: flex;
+	justify-content: center; /*置中*/	
+	align-items: center; 
+}
+nav li a:hover{
+	background-color:rgba(0,0,0,0.3); /*選單懸浮效果*/
+	cursor:url(../image/cursor.png),auto; /*logo滑鼠特效*/
+}
+
+.dropDownMenu{
+	display:none; /*一開始先隱藏*/
+	position:absolute;
+	background-color: #8E8E8E; /*次選單背景顏色*/
+	z-index: 10; /*次選單出現時不會被前景內容擋住 */
+	border:2px solid white;
+	border-radius: 0 0 7% 7%; /*次選單邊框圓角*/
+}
+.dropDownMenu>a {
+	justify-content: left;
+	color: white; /*次選單文字顏色*/
+	border:0px;
+}
+.dropDown:hover .dropDownMenu {
+	display:block;
+}
+.dropDown:hover .dropDownMenu a{
+
+	border-top:1px white solid;
+}
+#LOGO{
+	border-right:none;
+	border-left: none;
+	cursor:url(../image/cursor.png),auto; /*logo滑鼠特效*/
+	font-size:25px;
+}
+#LOGO div{
+	position:relative;
+	left:10px;
+	letter-spacing: 0.2em;
+}
+#LOGO:hover{
+	background-color:rgba(255,255,255,0);
+}
+a img{
+	width:30px;
+	margin-right:7px;
+}

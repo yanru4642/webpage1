@@ -1,0 +1,171 @@
+﻿@charset "UTF-8";
+.banner{
+	background:url(../image/history_of_programming.png);
+	background-repeat:repeat; /*重複背景圖*/
+	min-height: 500px; /*高度*/
+	background-position:center center; /*背景圖位置*/
+}
+.home_content{
+	width: 100%;
+	text-align:center; /*內容置中*/
+	border:1px solid rgba(0,0,0,0);
+	color:white;
+}
+.page_title{
+	margin:0 auto;
+	margin-top:10%;
+	margin-bottom: 10%;
+	min-height:200px; /*最小高度*/
+	width:70%;
+	font-size:2.5em;
+	background-color:rgba(255,255,255,0.2);
+	backdrop-filter:blur(5px); /*設定背景模糊效果(glassmorphism)*/
+	border-radius:20px; /*圓角*/
+	padding:30px 30px;
+	font-family:'Arial';
+	letter-spacing:0.2em; /*字體間隔*/
+	font-weight:bold; /*粗體*/
+}
+.page_subtitle{
+	margin-top:50px; /*上方留白*/
+	font-size:2rem;
+	font-weight:normal;
+}
+.content{
+	text-align:center; /*內容置中*/
+	min-height: 400px; /*最小高度*/
+	padding:20px;
+	font-family:'微軟正黑體';
+}
+.content_title{
+	font-size: 2.5em;
+	letter-spacing:0.5em;
+	margin:50px 0;
+}
+.content_wrap{
+	letter-spacing:2.5px;
+	line-height:2em;
+	font-size:20px;
+	text-align:left;
+	max-width:70%;
+	margin:0 auto;
+	margin-bottom:50px;
+}
+.content_wrap ul{
+	display:block;
+	list-style-type:square;
+}
+#_1940{
+	background-color:#295791;
+	color:white;
+}
+#_1950-1960{
+	background-color:#557DB7;
+	color:white;
+}
+#_1970{
+	background-color:#96D4D4;
+	color:black;
+}
+#_1980{
+	background-color:#D3EEDC;
+	color:black;
+}
+#_1990{
+	background-color:#FFFEC2;
+	color:black;
+}
+#now{
+	background-color:#F3E6E4;
+	color:black;
+}
+/*回頂部按鈕*/
+#backToTop a{
+	position:fixed;
+	bottom: 3%;
+	right:4%;
+	background:rgba(0,0,0,0.5);
+	overflow:hidden;
+	
+	display:flex;
+	font-size:30px;
+	padding:10px;
+	justify-content:center; /*水平置中*/
+	align-items:center; /*垂直置中*/
+	transition:1s;
+	text-decoration:none;
+	font-family:'Arial';
+}
+#backToTop a:hover{
+	background:var(--clr);
+	box-shadow:0 0 10px var(--clr),
+	0 0 30px var(--clr),
+	0 0 60px var(--clr),
+	0 0 90px var(--clr);;
+}
+#backToTop a::before{
+	content:'';
+	position:absolute;
+	width:40px;
+	height:400%;
+	background:var(--clr);
+	transition:1s;
+	animation:animate 4s linear infinite;
+	animation-delay:calc(0.33s*var(--i))
+}
+#backToTop a:hover::before{
+	width:120%;
+}
+@keyframes animate{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
+#backToTop a::after{
+	content:'';
+	position:absolute;
+	inset:4px;
+	background:#0e1538;
+}
+#backToTop a:hover::after{
+	background:var(--clr);
+}
+#backToTop a span{
+	position:relative;
+	z-index:1;
+	font-size:30px;
+	opacity:0.5;
+	color:white;
+	transition:0.5s;
+}
+#backToTop a:hover span{
+	opacity:1;
+}
+/*回頂部按鈕*/
+
+
+
+footer a{
+	margin-right: 40px;
+	color:#F3E6E4;
+	font-size: 20px;
+	text-decoration: overline underline; /*設定上劃線與底線*/
+	text-decoration-style: double; /*設定線的樣式*/
+}
+footer{
+	background-color: #7E7E7E;
+	/*置中*/
+	display: flex ;
+	align-items: center; 
+	justify-content: center;
+    padding: 25px;
+}	
+footer a:hover{
+	color:pink; /*懸浮時候為粉紅色*/
+}
+footer a:active{
+	color:red; /*點擊變成紅色*/
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Alan's page</title>
+	<link href="css/nav.css" rel="stylesheet" />
+	<link href="css/C_programming_language.css" rel="stylesheet" />
+	
+</head>
+<body id="top">
+	<header>
+		<nav>
+			<ul>
+				<div>
+					<a href="index.html"  id="LOGO"><img src="image/logo.png"><div>Home</div></a>
+				</div>
+				<div>
+					<li class="dropDown">
+						<a>程式 ▾</a>
+						<div class="dropDownMenu">
+							<a href="history_of_programming_languages.html">歷史</a>
+							<a href="C_programming_language.html">C</a>
+							<a href="C++_programming_language.html">C++</a>
+						</div>
+					</li>
+				
+					<li>
+						<a href="form.html">聯絡我</a>
+					</li>
+					<li>
+						<a href="about_nutn.html">關於南大</a>
+					</li>
+					<li class="dropDown">
+						<a>More ▾</a>
+						<div class="dropDownMenu">					
+							<a href="http://www.csie.nutn.edu.tw/cht/index/" target="_blank"><img src="image/csie_icon.png">CSIE</a>
+							<a href="https://www.nutn.edu.tw/index-ch.html" target="_blank"><img src="image/nutn_icon.png">NUTN</a>
+							<a href="https://github.com/yanru4642" target="_blank"><img src="image/github_icon.png">Github</a>
+							<a href="https://www.facebook.com/Alan8246/" target="_blank"><img src="image/facebook_icon.png">Facebook</a>
+							<a href="https://www.instagram.com/alan_8246/" target="_blank"><img src="image/instagram_icon.png">Instagram</a>
+						</div>
+					</li>
+					<li>
+						<a href="all_css_effect.html">已用的CSS</a>
+					</li>
+				</div>
+			</ul>
+		</nav>
+	</header>
+	<div class="home_content banner">
+		<div class="wrapper page_title ">
+			C
+		<br/>
+		<br/>
+		<hr/>
+			<div class="page_subtitle">
+				簡介 & 成果
+			</div>
+		</div>
+	</div>
+	<div id="bg1">
+		<div  class="flex_container">
+
+			<div class="_1 flex_child">
+				<h3>Intro.</h3>
+				<p>C是一種通用的、程序式編程程式語言，支援結構化編程、詞法作用域和遞迴，使用靜態型別系統，並且廣泛用於系統軟體與應用軟體的開發。</p>
+				<p>C語言於1969年至1973年間，為了移植與開發UNIX作業系統，由丹尼斯·里奇與肯·湯普遜，以B語言為基礎，在貝爾實驗室設計、開發出來。二十世紀八十年代，C語言應用日漸廣泛。為了避免各開發廠商用的C語言的語法產生差異，美國國家標準局為C語言訂定了一套完整的國際標準語法，稱為ANSI C，作為C語言的標準。與此同時，國際標準化組織也接受該標準為國際標準。因此，ANSI C也同時被稱為ISO C。二十世紀八十年代至今的有關程式開發工具，一般都支援符合ANSI C的語法。</p>
+				<p>C語言具有高效、靈活、功能豐富、表達力強和較高的可移植性等特點，在程式設計中備受青睞，成為最近25年使用最為廣泛的程式語言。目前，C語言編譯器普遍存在於各種不同的作業系統中，例如Microsoft Windows、macOS、Linux、Unix等。C語言的設計影響了眾多後來的程式語言，例如C++、Objective-C、Java、C#等。現行的許多軟體都是由C語言或者其影響和衍生的程式語言開發出來的。</p>
+			</div>
+	
+			<div class="_1 flex_child">
+				<h3>概述</h3>
+				<p>與ALGOL一族的大多數程序式程式語言類似，C語言是一個有結構化程式設計、具有變數作用域(variable scope)以及遞迴功能的程序式語言。其採用的靜態型別系統可以防止無意的程式設計操作。C語言中所有的可執行代碼都被包含在子程式(函式)里。其傳遞參數均是以值傳遞(pass by value)，另外也可以傳遞指標(a pointer passed by value)。C語言是自由形式語言，即其原始碼的縮排並不影響程式的功能，而是使用分號作為語句的結尾，大括號來表示代碼塊。</p>
+				<p>由於C語言的語言規模較小，若干高層的機制需要使用定義的函式來提供。比如，C語言並沒有直接處理複合物件(例如字串、集合、列表、陣列等)的操作，也沒有對於記憶體分配工具和記憶體回收工具的直接定義，同時也本身不具有輸入和輸出以及檔案存取的方法。然而，使用者定義的函式和C語言標準庫中的函式為這些高層的機制提供了可能性。</p>
+			</div>
+	
+		</div>
+	</div>
+	<div id="bg2">
+		<div class="flex_container">
+	
+			<div class="_2 flex_child">
+				<h3>語法</h3>
+				<p>C語言的形式文法由國際標準化組織所制定。C語言的原始碼包含聲明和函式定義。函式定義又包含聲明和語句。聲明可以定義一個新的類型，比如結構(struct)、聯合(union)和列舉(enum)，也可以為變數賦予類型和預留記憶體。複合語句由一對花括號包含，可以使得幾個語句從文法上變成一個語句。</p>
+				<p>作為一種指令式編程語言，C語言使用語句執行操作。最常見的語句是運算式語句，由一個運算式後加一個分號組成，可以令系統呼叫函式和為變數賦值。C語言也提供各種用保留關鍵字組成的控制流語句，以達到結構化編程的效果，例如選擇語句(if和else)、迴圈語句(for迴圈、while迴圈和do...while迴圈)和跳轉語句(goto、break和continue)。運算式可以包含不同的運算子，也可以呼叫函式。</p>
+			</div>
+	
+			<div class="_2 flex_child">
+				<h3>記憶體管理</h3>
+				<p>C語言的特色之一是：程式設計師必須親自處理記憶體的分配細節。語言不負責記憶體邊界檢查，這是因為在執行時進行記憶體邊界檢查會造成效能問題，與UNIX哲學不符。此特性容易導致緩衝區溢位問題。然而，部分編譯器(如英特爾編譯器)會出於安全性的考量，提供方法以進行執行時記憶體邊界檢查。</p>
+				<p>大多數C語言實現使用棧(Stack)來儲存函式返回位址／堆疊框基址、完成函式的參數傳遞和函式局部變數的儲存。然而，在部分極特殊的平台上，使用棧並不能獲得最大效率。此時的實現由編譯器決定。 如果程式需要在執行的過程中動態分配記憶體，可以利用堆(Heap)來實現。</p>
+			</div>
+		</div>	
+	</div>
+	<div id="bg3">
+		<div class="flex_container">
+	
+			<div class="_3 flex_child">
+				<h3>Recursion project in C</h3>
+				<img src="image/c_project1-2.jpg">
+			</div>
+			<div class="_3 flex_child">
+				<h3>Code</h3>
+				<img src="image/c_project1-1.jpg">
+			</div>
+		</div>	
+	</div>
+
+	<footer>
+		<div>
+			<a href="#top">
+				回頂部
+			</a>
+			<a href="https://zh.wikipedia.org/wiki/C%E8%AF%AD%E8%A8%80" target="_blank">
+				Wikipedia
+			</a>					
+			<a href="https://github.com/yanru4642" target="_blank">
+				Yanru Chen &reg;
+			</a>
+		</div>
+	</footer>
+
+</body>
+</html>

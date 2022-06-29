@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no" />
+	<title>Alan's page</title>
+	<link href="css/nav.css" rel="stylesheet" />
+	<link href="css/form.css" rel="stylesheet" />
+	
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<div>
+					<a href="index.html"  id="LOGO"><img src="image/logo.png"><div>Home</div></a>
+				</div>
+				<div>
+					<li class="dropDown">
+						<a>程式 ▾</a>
+						<div class="dropDownMenu">
+							<a href="history_of_programming_languages.html">歷史</a>
+							<a href="C_programming_language.html">C</a>
+							<a href="C++_programming_language.html">C++</a>
+						</div>
+					</li>
+				
+					<li>
+						<a href="form.html">聯絡我</a>
+					</li>
+					<li>
+						<a href="about_nutn.html">關於南大</a>
+					</li>
+					<li class="dropDown">
+						<a>More ▾</a>
+						<div class="dropDownMenu">					
+							<a href="http://www.csie.nutn.edu.tw/cht/index/" target="_blank"><img src="image/csie_icon.png">CSIE</a>
+							<a href="https://www.nutn.edu.tw/index-ch.html" target="_blank"><img src="image/nutn_icon.png">NUTN</a>
+							<a href="https://github.com/yanru4642" target="_blank"><img src="image/github_icon.png">Github</a>
+							<a href="https://www.facebook.com/Alan8246/" target="_blank"><img src="image/facebook_icon.png">Facebook</a>
+							<a href="https://www.instagram.com/alan_8246/" target="_blank"><img src="image/instagram_icon.png">Instagram</a>
+						</div>
+					</li>
+					<li>
+						<a href="all_css_effect.html">已用的CSS</a>
+					</li>
+				</div>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="background">
+		<div class="wrapper">	
+				<h1>Contact me</h1>
+			<form action = "http://rwdnutn.somee.com/frmPostAction.aspx"method="post" >
+
+					<div  class=" sectionC">
+						<div>
+							<img src="image/profile.jpg">
+						</div>
+					</div>
+
+
+
+				<div class="sectionA">
+					<fieldset>
+						<legend>基本資料</legend>
+						<div class="inputRow">
+							<label class="fieldTitle">姓名: </label>
+							<input type="text" name="fullname" size="10" required="required" placeholder="(必填)"/>
+						</div> 	
+						<div class="inputRow">
+							<label class="fieldTitle">手機: </label>
+							<input type="tel" name="phone" size="10" maxlength="10" value="09" required="required" placeholder="  (必填)"/>
+						</div>
+						<div class="inputRow">
+							<label class="fieldTitle">電郵: </label>
+							<input  id="Email_CSS" type="email" name="email" required="required" placeholder="(必填)"/>
+						</div>
+						<div class="inputRow">
+							<label class="fieldTitle">性別: </label>
+
+							<input class="radio" type="radio" name="gender" value="male" id="male" />
+							<label for="male">男性</label>
+
+							<input class="radio" type="radio" name="gender" value="female" id="female" />
+							<label for="female">女性</label>
+
+							<input class="radio" type="radio" name="gender" value="other" id="other" />
+							<label for="other">其他</label>
+						</div>
+					</fieldset>
+				</div>
+	
+				<div class="sectionB">
+					<fieldset>
+						<legend>見面資訊</legend>
+						<div class="inputRow">
+							<label class="fieldTitle">日期: </label>
+							<input type="date" name="date"/>
+						</div>
+						<div class="inputRow">
+							<label class="fieldTitle">時間: </label>
+							<input type="checkbox" name="time0" value="morning" id="morning"/><label for="morning"> 早上</label>
+							<input type="checkbox" name="time1" value="afternoon" id="afternoon" checked="checked"><label for="afternoon"> 下午</label>
+							<input type="checkbox" name="time2" value="night" id="night"/><label for="night"> 晚上</label>
+						</div>
+						<div class="inputRow">
+							<label class="fieldTitle">地點: </label>
+							<input type="text" name="address" />
+						</div>
+						<div class="inputRow">
+							<label class="fieldTitle">備註: </label>
+							<input type="text" name="comment" />
+						</div>
+					</fieldset>
+	
+					<span class="bottons">
+						<input type="reset" value="清除重來" />
+						<input type="submit" value="確定送出" />
+					</span>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<footer>
+		<div>					
+			<a href="https://github.com/yanru4642" target="_blank">Yanru Chen &reg;</a>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿@charset "UTF-8";
+body{
+	background-color: rgb(178, 193, 220);
+}
+.home_content{
+	border-radius: 15px;
+	background-color: rgb(134, 225, 218);
+	padding: 20px;
+	margin: 10px auto 50px auto;
+}
+.page_title{
+
+	word-spacing: 25px;
+	letter-spacing: 5px;
+	text-align:center;
+	font-size:80px;
+	font-family: 'AmaticSC-Bold', cursive;
+	border:15px white dotted;
+}
+.page_subtitle{
+	margin-left: 6%;
+	font-size:30px;
+	font-family: '微軟正黑體';
+}
+.list{
+	margin-top:15px;
+	line-height:30px;
+	display:block;
+	font-size:20px;
+	margin-left:5%;
+}
+.separator{
+	margin:20px 0;
+	border-bottom:5px white dotted;
+}

@@ -1,0 +1,170 @@
+﻿@charset "UTF-8";
+@media screen and (min-width:801px) { /*RWD*/
+    .background form{
+        flex-direction: row; 
+    }
+    .sectionA{
+        padding: 10px;
+        width: 30%;
+        margin:0 2%;
+    }
+    .sectionB{
+        padding: 10px;
+        width: 30%;
+        margin:0 2%;
+    }
+    .sectionC{
+        padding: 3%;
+        width:25%;
+        margin:0 2%;
+        display: flex;
+    }
+    .sectionC div{
+        margin: auto auto;
+    }
+    .sectionC img{
+        border-radius: 10%;
+    }
+
+    input{
+        width: 50%;
+    }
+}
+@media screen and (max-width:800px) { /*RWD*/
+    .background form{
+        flex-direction: column;
+    }
+    .sectionA{
+        padding: 10px;
+        width: 100%;
+        margin: 1% 0;
+    }
+    .sectionB{
+        padding: 10px;
+        width: 100%;
+        margin:1% 0;
+    }
+    .sectionC{
+        padding: 10%;
+        width: 100%;
+        margin: 1% 0;
+    }
+    .sectionC img{
+        border-radius: 50%;
+    }
+
+    input{
+        width: 100%;
+    }
+}
+
+.background{
+    background-repeat: no-repeat;
+    background: url(../image/form.png);
+    width: 100%;
+    background-position:center;
+    background-size: cover;
+    padding: 10% 0;
+}
+.background>div{   
+     /*背景*/
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter:blur(7px);
+
+    border-radius: 15px;
+    padding: 5px;
+}
+.background>div h1{
+    font-family: 'Baskervville-Regular';
+    font-size: 2.5em;
+    margin:20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.background form{
+    display: flex;
+    justify-content:center;
+    padding:2% 5px;
+    color: white;	
+    font-size:15px;
+}
+.inputRow{
+    font-family: '微軟正黑體';
+    font-size:20px;
+	margin-bottom:10px;
+}
+.fieldTitle{
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+.sectionA{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+.sectionC{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+fieldset div{
+    margin: 5px;
+    padding: 5px;
+}
+.sectionB{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.sectionB div{
+    text-align: left;
+}
+
+input{
+    height: 25px;
+    padding:5px 10px;
+    border-radius: 20px;
+    border: paleturquoise 1px solid;
+}
+input[type=radio],input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+}
+
+.radio{
+    margin-left: 10px;
+}
+.bottons{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.bottons input{
+    width: 40%;
+    height: 30px;
+    margin-right: 2%;
+}
+
+footer{
+	background-color: #7E7E7E;
+	/*置中*/
+	display: flex ;
+	align-items: center; 
+	justify-content: center;
+    padding: 25px;
+}
+footer a{
+	margin: 0 40px;
+	color:#F3E6E4;
+	font-size: 20px;
+	text-decoration: overline underline; /*設定上劃線與底線*/
+	text-decoration-style: double; /*設定線的樣式*/
+}
+footer a:hover{
+	color:pink; /*懸浮時候為粉紅色*/
+}
+footer a:active{
+	color:red; /*點擊變成紅色*/
+}

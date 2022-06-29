@@ -1,0 +1,128 @@
+﻿@charset "UTF-8";
+@media screen and (min-width:801px) { /*RWD*/
+	.flex_container{
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	.flex_child{
+		width: 45%;
+	}
+}
+@media screen and (max-width:800px) { /*RWD*/
+	.flex_container{
+		flex-direction: column;
+		justify-content: center;
+		margin:0 20px;
+	}
+	.flex_child{
+		width: 100%;
+	}
+}
+
+.banner{
+	background:url(../image/history_of_programming.png);
+	background-repeat:repeat;
+	height: 500px; /*高度*/
+	background-position:5% 5%;
+}
+.home_content{
+	text-align:center; /*內容置中*/
+	border:1px solid rgba(0,0,0,0);
+	color:white;
+}.page_title{
+	margin-top:8%; /*上方留白*/
+	min-height:200px;
+	max-width:70%;
+	font-size:2.5rem;
+	background-color:rgba(255,255,255,0.2);
+	backdrop-filter:blur(10px);
+	border-radius:20px;
+	padding:30px;
+	font-family:'Arial';
+	letter-spacing:0.2em;
+	font-weight:bold;
+}
+.page_subtitle{
+	margin-top:50px; /*上方留白*/
+	font-size:1.7rem;
+	font-weight:normal;
+}
+
+#bg1{
+	background-color: #96D4D4; 	
+
+}
+#bg2{
+	background-color: #b6d9c1;
+}
+#bg3{
+	background-color:#ebeab1;
+}
+
+.flex_container{
+	display: flex;
+}
+
+.flex_child{
+	padding: 20px 40px;
+	margin: 40px 0;
+	/*字*/
+	font-size: 20px;
+	font-family: '微軟正黑體';
+	letter-spacing: 2px;
+	line-height: 1.5em;
+}
+.flex_child h3{/*title*/
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	line-height: 1.5em;
+}
+.flex_child p{/*content*/
+	margin: 20px 0;
+}
+.flex_child img{
+	display: flex;
+	margin: 10px auto;
+}
+
+._1{
+	border-radius: 50px;
+	box-shadow: inset 8px 8px 10px #80b4b4,inset -4px -4px 15px #adf4f4;
+
+	background-color: #8fcdcd; 	
+	color:black;
+}
+._2{
+	border-radius: 50px;
+	box-shadow:  8px 8px 10px #92ac9b, -4px -4px 15px #e3ffef;
+
+	background: #c5e7d0;
+	color:black;
+}
+._3{
+	border-radius: 50px;
+	background: linear-gradient(145deg, #e6e5af, #f1f1c5);
+	box-shadow:  10px 10px 10px #d9d8a5,-8px -8px 15px #ffffdf;
+}
+
+footer{
+	background-color: #7E7E7E;
+	/*置中*/
+	display: flex ;
+	align-items: center; 
+	justify-content: center;
+    padding: 25px;
+}
+footer a{
+	margin: 0 40px;
+	color:#F3E6E4;
+	font-size: 20px;
+	text-decoration: overline underline; /*設定上劃線與底線*/
+	text-decoration-style: double; /*設定線的樣式*/
+}
+footer a:hover{
+	color:pink; /*懸浮時候為粉紅色*/
+}
+footer a:active{
+	color:red; /*點擊變成紅色*/
+}

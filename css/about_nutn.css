@@ -1,0 +1,116 @@
+﻿@charset "UTF-8";
+@media screen and (min-width:801px) { /*RWD*/
+    div .content{
+        width: 55%;
+        /*背景*/
+        border-right: 5px black dotted;
+    }
+    div .content+div{
+        width: 45%;
+    }
+    div .content+div{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:800px) { /*RWD*/
+    .flex_container{
+        flex-direction: column;
+    }
+    div .content{
+        /*背景*/
+        border-bottom: 5px black dotted;
+    }
+    div .content+div{
+        margin-top: 10px;
+    }
+}
+.wrapper{
+	box-sizing:border-box;
+	max-width:90%;
+	margin:0 auto;
+	padding:0 4%;
+}
+body {
+    background:#bab0e1;
+    background: linear-gradient(270deg, #bab0e1, #e7d2b0);
+    background-size: 400% 400%;
+    animation: AnimationName 15s ease infinite;
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.page_title{
+    letter-spacing: 5px;
+    word-spacing: 15px;
+    font-size: 3.7em;
+}
+.hr_style{
+    background-color:black;
+    height: 2px;
+    border: none;
+}
+.home_content{
+    margin-bottom: 20px;
+    /*背景*/
+    padding: 50px;
+    border-radius:20px;
+    background:rgba(0,0,0,0.2);
+    box-shadow: 7px 5px 5px black;
+    /*字體*/
+    font-family: '微軟正黑體';
+    min-height: 500px;
+}
+.flex_container{
+    width: 100%;
+    display: flex;
+}
+.flex_container div{
+    display: flex;
+    min-height: 50px;
+    justify-content: center;
+}
+div .content{
+    flex-direction: column;
+    justify-content:stretch;
+    padding: 10px;
+    /*字體*/
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+}
+div .content+div{
+    overflow: hidden;
+}
+.flex_container h4{
+
+    line-height: 2em;
+    font-size: 30px;
+    font-weight: bold;
+}
+.flex_container br+h4{
+    margin-top: 20px;
+}
+
+/**/
+footer{
+	background-color: #7E7E7E;
+	/*置中*/
+	display: flex ;
+	align-items: center; 
+	justify-content: center;
+    padding: 25px;
+}
+footer a{
+	color:#F3E6E4;
+	font-size: 20px;
+	text-decoration: overline underline; /*設定上劃線與底線*/
+	text-decoration-style: double; /*設定線的樣式*/
+}
+footer a:hover{
+	color:pink; /*懸浮時候為粉紅色*/
+}
+footer a:active{
+	color:red; /*點擊變成紅色*/
+}

@@ -1,0 +1,36 @@
+﻿@charset "UTF-8";
+@media screen and (min-width:801px) { /*RWD*/
+
+}
+@media screen and (max-width:800px) { /*RWD*/
+
+}
+
+body{
+	background-color:#EDE4CF; /*整個網頁背景顏色*/
+}
+.page_title{
+	margin-bottom:50px;
+	color:rgb(0,0,0) ;
+	font-family:'Baskervville', 'Times-New-Roman', serif;
+}
+.page_subtitle{
+	margin-top:50px;
+	font-family:'Arial';
+	font-size:2.5rem;
+	font-weight:200;
+	letter-spacing: 0.1em;
+}
+.home_content{
+	text-align:center; /*內容置中*/
+	margin-top:10%; /*上方留白*/
+}
+.home_content p{
+	font-size:2rem;
+	margin:75px 0;
+}
+.hr_style{
+    background-color:black;
+    height: 2px;
+    border: none;
+}
